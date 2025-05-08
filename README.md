@@ -94,14 +94,14 @@ A continuación, se muestran capturas de pantalla que ilustran las mejoras reali
 
 **Diseño anterior:** 
 
-![alt text](img/modo_antes.png) 
+![modo antes](img/modo_antes.png) 
  
-![alt text](img/css_antes.png) 
+![css antes](img/css_antes.png) 
 
 **Diseño actualizado:** 
  
-![alt text](img/modo_despues.png) 
+![modo después](img/modo_despues.png) 
 
-![alt text](img/css_despues.png)
+![css después](img/css_despues.png)
 
 
