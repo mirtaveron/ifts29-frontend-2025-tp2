@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Personal</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ============================= -->
+    <!-- ENCABEZADO DEL SITIO -->
+    <!-- Contiene el título y subtítulo principal -->
+    <!-- ============================= -->
+    <div class="encabezado">
+        <div class="titulos">
+          <h1>Desarrollo de Sistemas Web (Front End)</h1>
+          <h2>Práctica Formativa Obligatoria Nº2</h2>
+          <div id="timer">Entrega: 00:00:00</div>
+        </div>
+        <a id="toggleModo" href="">🌙 Modo oscuro</a>
+     </div>
+
+    <!-- ============================= -->
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <!-- Proporciona enlaces internos para mejorar la usabilidad -->
+    <!-- ============================= -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#tarjetas">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>           
+        </ul>
+    </nav>
+
+    <div class="container">
+         <!-- ============================= -->
+        <!-- CONTENIDO PRINCIPAL -->
+        <!-- Contiene las diferentes secciones del sitio -->
+        <!-- ============================= -->
+        <main>
+            
+            <!-- ============================= -->
+            <!-- SECCIÓN PRINCIPAL -->
+            <!-- Mensaje de bienvenida con breve introducción -->
+            <!-- ============================= -->
+            <section id="inicio">
+                <div class="encabezado-seccion">
+                    <div class="encabezado-titulo">
+                        <div class="line"></div>
+                        <h2>Bienvenido a mi Portafolio</h2>
+                    </div>
+                    <button class="btn-ocultar" data-target="contenido-inicio">Ocultar</button>
+                </div>
+                <article class="contenido" id="contenido-inicio">
+                    <p>En este espacio encontrarás mis proyectos, habilidades y formas de contacto.</p>
+                </article> 
+                
+            </section>
+            
+            <!-- ============================= -->
+            <!-- SECCIÓN SOBRE MÍ -->
+            <!-- Incluye una breve descripción del perfil profesional -->
+            <!-- ============================= -->
+            <section id="sobre-mi">
+                <div class="encabezado-seccion">
+                    <div class="encabezado-titulo">
+                        <div class="line"></div>
+                        <h2>Sobre Mí</h2>
+                    </div>
+                    <button class="btn-ocultar" data-target="contenido-sobre-mi">Ocultar</button>
+                </div>
+                <article class="contenido" id="contenido-sobre-mi">                    
+                    <p>Frontend Developer con conocimientos en tecnologías modernas como React, Angular y TypeScript. Experiencia en la creación de aplicaciones web optimizadas y responsivas, con enfoque en rendimiento y accesibilidad. Trabajo en equipo y colaboración con diseñadores y backend developers.</p>
+                </article>
+            </section>
+
+            <!-- ============================= -->
+            <!-- SECCIÓN PROYECTOS -->
+            <!-- Lista de proyectos con un diseño de tarjetas -->
+            <!-- Flexbox o Grid pueden ser usados para estructurar las tarjetas -->
+            <!-- ============================= -->
+            <section id="tarjetas">
+                <div class="contenido">
+                    <div class="encabezado-seccion"> 
+                        <div class="encabezado-titulo">
+                            <div class="line"></div>
+                            <h2>Mis Proyectos</h2>
+                        </div>    
+                        <button class="btn-ocultar" data-target="contenido-mis-proyectos">Ocultar</button>
+                    </div>
+                    <div class="tarjetas-container" id="contenido-mis-proyectos">
+                        
+                    </div>
+                </div>
+            </section>
+            
+            <!-- ============================= -->
+            <!-- SECCIÓN HABILIDADES -->
+            <!-- Lista de tecnologías y conocimientos -->
+            <!-- Podría representarse con íconos en lugar de solo texto -->
+            <!-- ============================= -->
+            <section id="habilidades">
+                <div class="contenido">
+                    <div class="encabezado-seccion"> 
+                        <div class="encabezado-titulo">
+                            <div class="line"></div>
+                            <h2>Habilidades</h2>
+                        </div>
+                        <button class="btn-ocultar" data-target="contenido-habilidades">Ocultar</button>
+                    </div>
+                    <ul id="contenido-habilidades">
+                    
+                    </ul>
+                </div>
+            </section>
+
+            <section class="galeria">                
+                <div class="carousel-container">
+                  <button class="prev">&#10094;</button>
+                  <div class="carousel">
+                    <img src="./img/logo-javascript.png" alt="logo javascript" class="active" data-category="frontend">
+                    <img src="./img/logo-html5.png" alt="logo html 5" data-category="frontend">
+                    <img src="./img/logo-css3.svg" alt="logo css 3" data-category="frontend">
+                    <img src="./img/logo-react.png" alt="logo react" data-category="frontend">
+                    <img src="./img/logo-nodejs.svg" alt="logo node" data-category="backend">
+                    <img src="./img/logo-sql.png" alt="logo sql" data-category="backend">
+                    <img src="./img/logo-bootstrap.png" alt="logo bootstrap" data-category="frontend">
+                    <img src="./img/logo-figma.png" alt="logo figma" data-category="herramientas">
+                    <img src="./img/logo-typescript.webp" alt="logo TypeScript" data-category="frontend">
+                    <img src="./img/logo-vue.webp" alt="logo vue" data-category="frontend">
+
+                  </div>
+                  <button class="next">&#10095;</button>
+
+                  <div class="thumbnails-wrapper">                    
+                    <div class="thumbnails">
+                        <img src="./img/logo-javascript.png" alt="Mini javascript" data-category="frontend">
+                        <img src="./img/logo-html5.png" alt="Mini html 5" data-category="frontend">
+                        <img src="./img/logo-css3.svg" alt="Mini css 3" data-category="frontend">
+                        <img src="./img/logo-react.png" alt="Mini react" data-category="frontend">
+                        <img src="./img/logo-nodejs.svg" alt="Mini node" data-category="backend">
+                        <img src="./img/logo-sql.png" alt="Mini sql" data-category="backend">
+                        <img src="./img/logo-bootstrap.png" alt="Mini bootstrap" data-category="frontend">
+                        <img src="./img/logo-figma.png" alt="Mini figma" data-category="herramientas">
+                        <img src="./img/logo-typescript.webp" alt="Mini TypeScript" data-category="frontend">
+                        <img src="./img/logo-vue.webp" alt="Mini vue" data-category="frontend">
+                      </div>
+                  </div>
+
+                 
+                <div class="filters">
+                    <button class="active-filter" data-filter="all">Todos</button>
+                    <button data-filter="frontend">Frontend</button>
+                    <button data-filter="backend">Backend</button>
+                    <button data-filter="herramientas">Herramientas</button>
+                </div>
+
+                </div>
+            </section>
+
+
+
+            <!-- ============================= -->
+            <!-- SECCIÓN CONTACTO -->
+            <!-- Formulario para recibir mensajes de usuarios -->
+            <!-- Se podrían agregar validaciones en JavaScript -->
+            <!-- ============================= -->
+            <section id="contacto">
+                <div class="encabezado-seccion"> 
+                    <div class="encabezado-titulo">
+                        <div class="line"></div>
+                        <h2>Contacto</h2>
+                    </div>
+                    <button class="btn-ocultar" data-target="formularioContacto">Ocultar</button>
+                </div>
+                <form id="formularioContacto" >
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre">
+                    <div class="error" id="error-nombre"></div>
+                    
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido">
+                    <div class="error" id="error-apellido"></div>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                    <div class="error" id="error-email"></div>
+            
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono">
+                    <div class="error" id="error-telefono"></div>
+            
+                    <button type="submit">Enviar</button>
+                </form>
+             
+                <div id="modal" class="modal oculto">
+                    <div class="modal-contenido">
+                      <p>✅ ¡Formulario enviado con éxito!</p>
+                      <button id="cerrarModal">Cerrar</button>
+                    </div>
+                  </div>
+
+            </section>
+            
+            <!-- ============================= -->
+            <!-- SECCIÓN PELÍCULAS FAVORITAS -->
+            <!-- Sección adicional para mostrar gustos personales -->
+            <!-- ============================= -->
+            <section id="peliculas">
+                <div class="encabezado-seccion"> 
+                    <div class="encabezado-titulo">
+                        <div class="line"></div>
+                        <h2>Películas Favoritas</h2>
+                    </div>
+                    <button class="btn-ocultar" data-target="contenido-peliculas">Ocultar</button>
+                </div>
+                <div class="peliculas-container" id="contenido-peliculas">
+                    
+                </div>
+            </section>       
+        </main>
+    </div>
+
+    <!-- ============================= -->
+    <!-- PIE DE PÁGINA -->
+    <!-- Contiene información de derechos de autor -->
+    <!-- ============================= -->
+    <footer>
+        <p>@2025 - Todos los derechos reservados</p>
+        <p>Creado por Mirta Verón</p>
+        <p>Visitas: <span id="visit-count">0</span></p>
+    </footer>
+
+    <script src="./js/datos.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
