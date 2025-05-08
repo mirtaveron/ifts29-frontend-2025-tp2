@@ -102,7 +102,6 @@ A continuación, se muestran capturas de pantalla que ilustran las mejoras reali
  
 ![alt text](img/modo_despues.png) 
 
-![alt text](img/css_despues.png) 
- 
+![alt text](img/css_despues.png)
 
 
